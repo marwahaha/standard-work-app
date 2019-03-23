@@ -1,8 +1,6 @@
 # Standard Work Front End Application
 
-## standard-work-app
-
-An application to standardize &amp; document your work process.
+An application to standardize & document your work process.
 
 ---
 
