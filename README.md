@@ -6,23 +6,16 @@ An application to standardize & document your work process.
 
 The following is an overview of the structure and tooling used in constructing this software.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Architecture
 
-This app uses and architectual pattern called Flux. Flux is implemented with a tiny library called [Redux](https://redux.js.org/introduction/motivation). Reading the redux documentation will help with understanding this. Note: with 500,000 downloads / day, redux is one of the most downloaded JavaScript packages. React just hit 5M downloads/week, while redux is around 3M. https://www.npmjs.com/package/react
+This app uses and architectual pattern called Flux. Flux is implemented with a tiny library called [Redux](https://redux.js.org/introduction/motivation). Reading the redux documentation will help with understanding this. 
 
-## Quirks / Other
+## Overview
 
 - API Request handles the interface with the api
 - The NetworkHandler is a redux action creator that runs the IsFetching => Success => Error process for every request/response. It calls the api request to do this.
 - The response handler formats the response in the proper format and can generate a JSON error object based on a network error if the api is not available.
 
-## Development
-
-- In apiRequest.js comment out the credentials: 'include' line in apiRequest.js
-- In Login.js, change Cookies.get('wrightnet_user_token') to the hardcoded value of a cookie ID obtained via loging into sw.wrightmfg.com
-- In netWorkHandler.js, uncomment the adding of a user id in every request.
 
 ## Source Organization
 
@@ -62,31 +55,32 @@ To run this project locally, please clone this repository and follow these steps
 
 In the project directory, you can run:
 
-### `npm start`
+## Develop
 
-Runs the app in the development mode.<br>
+To begin developing, run `npm install` followed by `npm start`. This will runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The page will reload if you make edits, and you will see any lint errors in the console.
 
-### `npm test`
+Do begin modifying components, please start with these steps:
+- In apiRequest.js comment out the credentials: 'include' line in apiRequest.js
+- In Login.js, change Cookies.get('wrightnet_user_token') to the hardcoded value of a cookie ID obtained via loging into sw.wrightmfg.com
+- In netWorkHandler.js, uncomment the adding of a user id in every request.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Test
 
-### `npm run build`
+`npm test` - Launches the test runner in the interactive watch mode.
 
-Builds the app for production to the `build` folder.<br>
+
+## Deployment
+
+`npm run build` - Builds the app for production to the `build` folder.
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app isnow ready to be deployed!
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
