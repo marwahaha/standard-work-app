@@ -12,9 +12,7 @@ This app uses and architectual pattern called Flux. Flux is implemented with a t
 
 ## Overview
 
-- API Request handles the interface with the api
-- The NetworkHandler is a redux action creator that runs the IsFetching => Success => Error process for every request/response. It calls the api request to do this.
-- The response handler formats the response in the proper format and can generate a JSON error object based on a network error if the api is not available.
+TODO: OUTLINE APPLICATION CAPABILITIES & USE CASES. ADD GIFS OF USEAGE.
 
 
 ## Source Organization
