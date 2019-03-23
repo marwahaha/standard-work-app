@@ -1,0 +1,14 @@
+POST https://data.wrightmfg.com/database/helpers/_request_data_TEST.php HTTP/1.1
+content-type: application/json
+
+{
+  "data_source":"standard_work",
+  "request_type":"update_swb",
+  "swb_update_arr":{
+    "dsswb_swb_manage_notes":"test",
+    "dsswb_swb_desc":"Hi There"
+  },
+  "asam_id":253,
+  "swb_parts_arr": [],
+  "user_id":1
+}
