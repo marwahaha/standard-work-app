@@ -1,4 +1,4 @@
-# Standard Work Front End Application
+# Standard Work App
 
 An application to standardize & document your work process.
 
