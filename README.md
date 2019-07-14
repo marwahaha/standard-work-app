@@ -40,7 +40,7 @@ Deeper descriptions of each dependency and their related GitHub repositories can
 - `filepond-plugin-*`: Plugins for filepond.
 - `lodash`: JavaScript extension utilities.
 - `react`: A JavaScript library for building data-driven user interfaces.
-- `react-dom`: React library for working with the DOM (react can be used on non-web apps. react-dom adds this abilty).
+- `react-dom`: React library for working with the DOM (react can be used on non-web apps. react-dom adds this ability).
 - `react-beautiful-dnd`: A drag and drop library for react.
 - `redux`: Predictable state container for React.
 - `react-redux`: React binding for Redux.
